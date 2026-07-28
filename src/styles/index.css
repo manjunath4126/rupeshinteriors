@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+:root {
+  /* Brand Color Palette */
+  --primary-apricot: #F3C08D;
+  --apricot-hover: #e8a96d;
+  --apricot-light: rgba(243, 192, 141, 0.15);
+  
+  --secondary-slate: #B1B0AC;
+  --slate-dark: #7a7976;
+  --slate-light: #f4f4f3;
+  
+  --charcoal-black: #1A1918;
+  --charcoal-subtle: #2d2b29;
+  
+  --pure-white: #FFFFFF;
+  
+  /* Typography */
+  --font-heading: 'Playfair Display', serif, system-ui;
+  --font-body: 'Outfit', sans-serif, system-ui;
+  
+  /* Glassmorphism settings */
+  --glass-bg: rgba(255, 255, 255, 0.75);
+  --glass-bg-dark: rgba(26, 25, 24, 0.85);
+  --glass-border: rgba(255, 255, 255, 0.4);
+  --glass-border-dark: rgba(243, 192, 141, 0.2);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.08);
+  --glass-blur: blur(12px);
+
+  /* Transitions */
+  --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--pure-white);
+  color: var(--charcoal-black);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--charcoal-black);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+p {
+  color: #4a4947;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-body);
+  border: none;
+  outline: none;
+}
+
+/* Custom Glassmorphism Classes */
+.glass-nav {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border-bottom: 1px solid rgba(177, 176, 172, 0.25);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(177, 176, 172, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+  transition: var(--transition-smooth);
+}
+
+.glass-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary-apricot);
+  box-shadow: 0 16px 35px rgba(243, 192, 141, 0.15);
+}
+
+.glass-card-dark {
+  background: var(--charcoal-black);
+  color: var(--pure-white);
+  border: 1px solid rgba(243, 192, 141, 0.2);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+}
+
+/* Custom Buttons */
+.btn-primary {
+  background: var(--primary-apricot);
+  color: var(--charcoal-black);
+  padding: 12px 28px;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: var(--transition-smooth);
+  box-shadow: 0 4px 15px rgba(243, 192, 141, 0.4);
+}
+
+.btn-primary:hover {
+  background: var(--apricot-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(243, 192, 141, 0.5);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--charcoal-black);
+  padding: 12px 28px;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 1.5px solid var(--charcoal-black);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: var(--transition-smooth);
+}
+
+.btn-secondary:hover {
+  background: var(--charcoal-black);
+  color: var(--pure-white);
+  transform: translateY(-2px);
+}
+
+.btn-outline-apricot {
+  background: transparent;
+  color: var(--charcoal-black);
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-weight: 500;
+  border: 1px solid var(--primary-apricot);
+  transition: var(--transition-smooth);
+}
+
+.btn-outline-apricot:hover {
+  background: var(--primary-apricot);
+  color: var(--charcoal-black);
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+/* Page Section padding */
+.section-padding {
+  padding: 80px 0;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 50px 0;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease forwards;
+}
