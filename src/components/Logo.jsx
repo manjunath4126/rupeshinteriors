@@ -1,7 +1,8 @@
 import React from 'react';
 
 const Logo = ({ size = 'normal' }) => {
-  const height = size === 'large' ? '65px' : '50px';
+  // Height tuned for maximum visibility without cluttering header
+  const height = size === 'large' ? '70px' : '55px';
 
   return (
     <div style={{ display: 'inline-flex', alignItems: 'center' }}>
