@@ -5,63 +5,77 @@ import { X, ZoomIn } from 'lucide-react';
 const portfolioData = [
   {
     id: 1,
+    title: 'Wooden Panel False Ceiling & Fan Recesses',
+    category: 'Ceiling',
+    image: '/services/ceiling_wood_design.jpg',
+    description: 'Custom wooden ceiling panels with integrated peripheral cove lighting and recessed ceiling fan mounts.'
+  },
+  {
+    id: 2,
+    title: 'Luxury Green & Patterned Double Drapes',
+    category: 'Curtain',
+    image: '/services/curtain_green_pattern.jpg',
+    description: 'Dual-tone luxury green drapes combined with traditional geometric patterned inner curtains.'
+  },
+  {
+    id: 3,
+    title: 'Warm Ambient Cove & False Ceiling Lighting',
+    category: 'Ceiling',
+    image: '/services/lighting_cove_profile.jpg',
+    description: 'Minimalist warm perimeter cove LED false ceiling lighting with accent circular wall backlight and TV console illumination.'
+  },
+  {
+    id: 4,
+    title: 'Classic Wooden Window Frame & Drapes',
+    category: 'Curtain',
+    image: '/services/windows_wooden_frame.jpg',
+    description: 'Bespoke solid wood window casement with decorative curtain rod and matching tie-back drapes.'
+  },
+  {
+    id: 5,
+    title: 'Elegant Beige Window Sheers & Pleated Drapes',
+    category: 'Curtain',
+    image: '/services/curtain_beige.jpg',
+    description: 'Floor-to-ceiling pleated beige blackout drapes with sheer white inner curtains for soft sunlight filtering.'
+  },
+  {
+    id: 6,
+    title: 'Traditional Wooden Pooja Mandir with Etched Glass',
+    category: 'Pooja Unit',
+    image: '/services/pooja_glass_mandir.jpg',
+    description: 'Custom wood pooja cabinet with Ganesha etched glass doors, built-in spotlighting, auspicious symbols, and bottom storage drawers.'
+  },
+  {
+    id: 7,
+    title: 'Modern White CNC Laser-Cut Om Mandir',
+    category: 'Pooja Unit',
+    image: '/services/pooja_cnc_om_mandir.jpg',
+    description: 'Laser-cut CNC Om lotus backboard pooja mandir unit with jaali doors, spotlight illumination, and dark glossy bottom drawers.'
+  },
+  {
+    id: 8,
     title: 'Modern Modular Kitchen & Island',
     category: 'Modular Kitchen',
     image: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80',
     description: 'Acrylic finish handleless shutters with quartz countertop and built-in appliances.'
   },
   {
-    id: 2,
+    id: 9,
     title: 'Luxury Master Bedroom Wardrobe',
     category: 'Wardrobe',
     image: 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=800&q=80',
     description: 'Floor-to-ceiling sliding wardrobe with tinted glass & integrated LED warm profile lighting.'
   },
   {
-    id: 3,
-    title: 'Minimalist POP Ceiling & Profile Lights',
-    category: 'Ceiling',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
-    description: 'Perimeter cove lighting with geometric false ceiling design for main living room.'
-  },
-  {
-    id: 4,
+    id: 10,
     title: 'Custom Floating TV Panel Unit',
     category: 'TV Unit',
     image: 'https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80',
     description: 'Louvers slat wooden backdrop with marble veneer wall mount and hidden cable tray.'
-  },
-  {
-    id: 5,
-    title: 'Traditional Wooden Pooja Mandir',
-    category: 'Pooja Unit',
-    image: 'https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?auto=format&fit=crop&w=800&q=80',
-    description: 'Intricately carved wooden bell pooja unit with onyx marble backlit panel.'
-  },
-  {
-    id: 6,
-    title: 'Ergonomic Home Office & Study',
-    category: 'Study Table',
-    image: 'https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=800&q=80',
-    description: 'Dual monitor desk setup with overhead storage cabinets and magnetic pinboard.'
-  },
-  {
-    id: 7,
-    title: 'Glass Crockery Display Cabinet',
-    category: 'Crockery Unit',
-    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80',
-    description: 'Gold aluminum frame glass doors with internal soft spotlighting for dining room.'
-  },
-  {
-    id: 8,
-    title: 'Modern Living Room Drapes & Sheers',
-    category: 'Curtain',
-    image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80',
-    description: 'Motorized blackout drapes combined with sheer curtains for natural light control.'
   }
 ];
 
-const categories = ['All', 'Modular Kitchen', 'Wardrobe', 'TV Unit', 'Ceiling', 'Pooja Unit', 'Study Table', 'Crockery Unit', 'Curtain'];
+const categories = ['All', 'Ceiling', 'Curtain', 'Pooja Unit', 'Modular Kitchen', 'Wardrobe', 'TV Unit'];
 
 const PortfolioGrid = ({ limit }) => {
   const [activeCategory, setActiveCategory] = useState('All');
@@ -97,7 +111,8 @@ const PortfolioGrid = ({ limit }) => {
               transition: 'var(--transition-smooth)',
               background: activeCategory === cat ? '#F3C08D' : 'rgba(177, 176, 172, 0.15)',
               color: activeCategory === cat ? '#1A1918' : '#4a4947',
-              border: 'none'
+              border: 'none',
+              cursor: 'pointer'
             }}
           >
             {cat}
@@ -127,7 +142,7 @@ const PortfolioGrid = ({ limit }) => {
               style={{ overflow: 'hidden', cursor: 'pointer' }}
               onClick={() => setSelectedItem(item)}
             >
-              <div style={{ position: 'relative', height: '240px', overflow: 'hidden' }}>
+              <div style={{ position: 'relative', height: '260px', overflow: 'hidden' }}>
                 <img
                   src={item.image}
                   alt={item.title}
@@ -158,21 +173,19 @@ const PortfolioGrid = ({ limit }) => {
                 </div>
               </div>
 
-              <div style={{ padding: '20px' }}>
-                <h3 style={{ fontSize: '1.1rem', marginBottom: '6px', color: '#1A1918' }}>{item.title}</h3>
-                <p style={{ fontSize: '0.85rem', color: '#7a7976', lineHeight: 1.4 }}>{item.description}</p>
+              <div style={{ padding: '16px 20px', textAlign: 'center' }}>
                 <div
                   style={{
-                    marginTop: '14px',
-                    display: 'flex',
+                    display: 'inline-flex',
                     alignItems: 'center',
+                    justifyContent: 'center',
                     gap: '6px',
-                    fontSize: '0.82rem',
+                    fontSize: '0.88rem',
                     fontWeight: 600,
-                    color: '#F3C08D'
+                    color: '#1A1918'
                   }}
                 >
-                  <ZoomIn size={14} /> View Project Details
+                  <ZoomIn size={16} color="#F3C08D" /> View Project Details
                 </div>
               </div>
             </motion.div>
@@ -221,7 +234,9 @@ const PortfolioGrid = ({ limit }) => {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                zIndex: 10
+                zIndex: 10,
+                border: 'none',
+                cursor: 'pointer'
               }}
             >
               <X size={20} />

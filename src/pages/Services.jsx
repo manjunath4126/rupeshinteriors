@@ -1,22 +1,61 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { PhoneCall, Calendar } from 'lucide-react';
+import { Calendar } from 'lucide-react';
 import ServiceCard from '../components/ServiceCard';
 
 const servicesData = [
-  { title: 'Modular Kitchen', description: 'Ergonomic layouts, acrylic & laminate shutters, quartz countertops, and pull-out storage solutions.' },
-  { title: 'Wardrobe', description: 'Sliding & hinged wardrobes with custom drawer organizers, glass doors & warm LED profile lights.' },
-  { title: 'Crockery Unit', description: 'Elegant display cabinets for dining spaces crafted with glass doors and wooden accents.' },
-  { title: 'TV Unit', description: 'Wall-mounted & floor TV units featuring marble backdrop panels, wooden louvers & hidden wire tracks.' },
-  { title: 'Study Table', description: 'Compact & functional work-from-home desk setups with overhead bookshelves and cable channels.' },
-  { title: 'Pooja Unit', description: 'Sacred, beautifully crafted mandirs with CNC wood carving and onyx marble backlit backdrops.' },
-  { title: 'Ceiling', description: 'POP & gypsum false ceilings with decorative coffers, peripheral coves & profile lighting.' },
-  { title: 'Lighting', description: 'Layered ambient, task, and accent lighting plans to enhance architectural atmosphere.' },
-  { title: 'Wallpaper', description: 'Curated premium texture, geometric, and mural wallpapers for accent bedroom & living walls.' },
-  { title: 'Curtain', description: 'Custom blackout drapes, sheer curtains, motorized track systems, and Roman blinds.' },
-  { title: 'Custom Furniture', description: 'Bespoke sofas, dining tables, headboards, and accent chairs tailored to your exact space sizes.' },
-  { title: 'Doors', description: 'Designer flush doors, veneered doors, solid wood entrance doors, and sliding glass partitions.' },
-  { title: 'Windows', description: 'Bay window seating, decorative wooden window frames, and UPVC framing accents.' }
+  {
+    title: 'Modular Kitchen',
+    description: 'Ergonomic layouts, acrylic & laminate shutters, quartz countertops, and pull-out storage solutions.'
+  },
+  {
+    title: 'Wardrobe',
+    description: 'Sliding & hinged wardrobes with custom drawer organizers, glass doors & warm LED profile lights.'
+  },
+  {
+    title: 'Crockery Unit',
+    description: 'Elegant display cabinets for dining spaces crafted with glass doors and wooden accents.'
+  },
+  {
+    title: 'TV Unit',
+    description: 'Wall-mounted & floor TV units featuring marble backdrop panels, wooden louvers & hidden wire tracks.'
+  },
+  {
+    title: 'Study Table',
+    description: 'Compact & functional work-from-home desk setups with overhead bookshelves and cable channels.'
+  },
+  {
+    title: 'Pooja Unit',
+    description: 'Sacred, beautifully crafted mandirs with CNC wood carving and onyx marble backlit backdrops.'
+  },
+  {
+    title: 'Ceiling',
+    description: 'POP & gypsum false ceilings with decorative coffers, wooden paneling, peripheral coves & profile lighting.'
+  },
+  {
+    title: 'Lighting',
+    description: 'Layered ambient, task, and warm cove profile lighting plans to enhance architectural atmosphere.'
+  },
+  {
+    title: 'Wallpaper',
+    description: 'Curated premium texture, geometric, and elegant drape designs for accent bedroom & living walls.'
+  },
+  {
+    title: 'Curtain',
+    description: 'Custom blackout drapes, sheer curtains, motorized track systems, and elegant patterned fabrics.'
+  },
+  {
+    title: 'Custom Furniture',
+    description: 'Bespoke sofas, dining tables, headboards, and accent chairs tailored to your exact space sizes.'
+  },
+  {
+    title: 'Doors',
+    description: 'Designer flush doors, veneered doors, solid wood entrance doors, and sliding glass partitions.'
+  },
+  {
+    title: 'Windows',
+    description: 'Classic wooden window framing, decorative drapes, bay window seating, and UPVC framing accents.'
+  }
 ];
 
 const Services = () => {
@@ -39,7 +78,7 @@ const Services = () => {
             Our 13 Specialized Interior Services
           </h1>
           <p style={{ color: '#B1B0AC', maxWidth: '650px', margin: '0 auto', fontSize: '1.05rem' }}>
-            From kitchen modularization to custom woodwork & false ceiling profiles — we execute every element of your home.
+            From kitchen modularization to custom woodwork, false ceilings & custom drapes — we execute every element of your home.
           </p>
         </div>
       </section>
