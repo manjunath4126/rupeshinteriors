@@ -48,8 +48,8 @@ const Home = () => {
       {/* Stats Counter Bar */}
       <StatsBar />
 
-      {/* About Brief Section */}
-      <section className="section-padding" style={{ background: '#FFFFFF' }}>
+      {/* About Brief Section (Details of Company) */}
+      <section className="section-padding" style={{ background: '#FFFFFF', paddingBottom: '40px' }}>
         <div className="container">
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '50px', alignItems: 'center' }}>
             <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
@@ -85,6 +85,64 @@ const Home = () => {
               </NavLink>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* Founder Spotlight Card (Positioned directly below Company Details) */}
+      <section style={{ background: '#FFFFFF', paddingBottom: '70px' }}>
+        <div className="container">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="glass-card"
+            style={{
+              padding: '32px 40px',
+              borderRadius: '24px',
+              background: 'linear-gradient(135deg, #F9F8F6 0%, #FFFFFF 100%)',
+              border: '1px solid rgba(243, 192, 141, 0.4)',
+              boxShadow: '0 15px 35px rgba(0, 0, 0, 0.04)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              flexWrap: 'wrap',
+              gap: '28px'
+            }}
+          >
+            <div style={{ display: 'flex', alignItems: 'center', gap: '24px', flexWrap: 'wrap' }}>
+              <img
+                src="/owner.jpg"
+                alt="G. Dharmaraju - Founder & Principal Designer"
+                style={{
+                  width: '95px',
+                  height: '95px',
+                  borderRadius: '50%',
+                  objectFit: 'cover',
+                  border: '3.5px solid #F3C08D',
+                  boxShadow: '0 10px 25px rgba(243, 192, 141, 0.35)',
+                  flexShrink: 0
+                }}
+              />
+              <div>
+                <span style={{ color: '#F3C08D', fontWeight: 700, letterSpacing: '0.12em', fontSize: '0.8rem', textTransform: 'uppercase' }}>
+                  LEADERSHIP SPOTLIGHT
+                </span>
+                <h3 style={{ fontSize: '1.75rem', color: '#1A1918', margin: '4px 0 2px 0', fontWeight: 700 }}>
+                  G. Dharmaraju
+                </h3>
+                <p style={{ color: '#7a7976', fontSize: '0.95rem', fontWeight: 600, margin: '0 0 6px 0' }}>
+                  Founder & Principal Interior Designer
+                </p>
+                <p style={{ color: '#4a4947', fontSize: '0.92rem', maxWidth: '520px', lineHeight: 1.5, margin: 0 }}>
+                  Leading Rupesh Interiors with 3+ years of space planning excellence across Hyderabad.
+                </p>
+              </div>
+            </div>
+
+            <NavLink to="/about" className="btn-primary" style={{ padding: '14px 30px', whiteSpace: 'nowrap', borderRadius: '30px' }}>
+              Meet G. Dharmaraju <ArrowRight size={18} />
+            </NavLink>
+          </motion.div>
         </div>
       </section>
 
