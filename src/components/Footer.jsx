@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Phone, Mail, MapPin, MessageSquare, ArrowUpRight } from 'lucide-react';
+import { Phone, Mail, MapPin, ArrowUpRight } from 'lucide-react';
 import Logo from './Logo';
 
 const Footer = () => {
@@ -18,8 +18,17 @@ const Footer = () => {
         >
           {/* Brand Info */}
           <div>
-            <div style={{ filter: 'brightness(0) invert(1)', marginBottom: '20px' }}>
-              <Logo />
+            <div
+              style={{
+                background: '#FFFFFF',
+                padding: '12px 18px',
+                borderRadius: '14px',
+                display: 'inline-block',
+                marginBottom: '20px',
+                boxShadow: '0 4px 15px rgba(0,0,0,0.2)'
+              }}
+            >
+              <Logo size="normal" />
             </div>
             <p style={{ color: '#B1B0AC', fontSize: '0.95rem', marginBottom: '20px', maxWidth: '320px' }}>
               Crafting timeless, functional, and luxury minimalist spaces tailored to your personal aesthetic and lifestyle.
@@ -121,7 +130,7 @@ const Footer = () => {
           style={{
             paddingTop: '24px',
             display: 'flex',
-            justifyKeyword: 'space-between',
+            justifyContent: 'space-between',
             alignItems: 'center',
             flexWrap: 'wrap',
             gap: '12px',
