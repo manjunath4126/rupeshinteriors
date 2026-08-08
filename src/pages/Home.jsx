@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { CheckCircle2, ArrowRight, Sparkles, PhoneCall, UserCheck } from 'lucide-react';
+import { CheckCircle2, ArrowRight, Sparkles, PhoneCall } from 'lucide-react';
 
 import HeroSection from '../components/HeroSection';
 import StatsBar from '../components/StatsBar';
@@ -45,77 +45,7 @@ const Home = () => {
       {/* Hero */}
       <HeroSection />
 
-      {/* Prominent Owner Section (Placed just above StatsBar) */}
-      <section style={{ marginTop: '-30px', marginBottom: '10px', position: 'relative', zIndex: 10 }}>
-        <div className="container">
-          <motion.div
-            initial={{ opacity: 0, y: 25 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="glass-card"
-            style={{
-              padding: '24px 32px',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'space-between',
-              flexWrap: 'wrap',
-              gap: '24px',
-              background: 'rgba(255, 255, 255, 0.96)',
-              backdropFilter: 'blur(12px)',
-              borderLeft: '6px solid #F3C08D',
-              boxShadow: '0 16px 40px rgba(0, 0, 0, 0.08)',
-              borderRadius: '20px'
-            }}
-          >
-            {/* Owner Info & Photo */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '20px', flexWrap: 'wrap' }}>
-              <img
-                src="/owner.jpg"
-                alt="G. Dharmaraju - Founder & Principal Designer"
-                style={{
-                  width: '90px',
-                  height: '90px',
-                  borderRadius: '50%',
-                  objectFit: 'cover',
-                  border: '3.5px solid #F3C08D',
-                  boxShadow: '0 8px 25px rgba(243, 192, 141, 0.4)',
-                  flexShrink: 0
-                }}
-              />
-              <div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '2px' }}>
-                  <UserCheck size={16} color="#F3C08D" />
-                  <span style={{ fontSize: '0.8rem', fontWeight: 700, letterSpacing: '0.12em', color: '#F3C08D', textTransform: 'uppercase' }}>
-                    MEET THE FOUNDER & LEAD DESIGNER
-                  </span>
-                </div>
-                <h3 style={{ fontSize: '1.65rem', color: '#1A1918', margin: '2px 0', fontWeight: 700 }}>
-                  G. Dharmaraju
-                </h3>
-                <p style={{ fontSize: '0.95rem', color: '#4a4947', fontWeight: 500, margin: 0 }}>
-                  Founder & Principal Interior Designer — Leading Rupesh Interiors with 3+ years of space planning excellence.
-                </p>
-              </div>
-            </div>
-
-            {/* Redirect Button to About Page */}
-            <NavLink
-              to="/about"
-              className="btn-primary"
-              style={{
-                padding: '12px 28px',
-                whiteSpace: 'nowrap',
-                fontSize: '0.92rem',
-                borderRadius: '30px'
-              }}
-            >
-              Learn More About G. Dharmaraju <ArrowRight size={18} />
-            </NavLink>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Stats Counter Bar (3+ Years Experience · 35+ Projects · 25+ Clients) */}
+      {/* Stats Counter Bar */}
       <StatsBar />
 
       {/* About Brief Section */}
