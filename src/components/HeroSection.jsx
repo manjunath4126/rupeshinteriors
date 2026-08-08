@@ -8,12 +8,12 @@ const HeroSection = () => {
     <section
       style={{
         position: 'relative',
-        minHeight: '85vh',
+        minHeight: '80vh',
         display: 'flex',
         alignItems: 'center',
         background: 'linear-gradient(135deg, #FFFFFF 0%, #F8F7F5 60%, #F3C08D 100%)',
         overflow: 'hidden',
-        padding: '60px 0 80px 0'
+        padding: '60px 0 60px 0'
       }}
     >
       {/* Decorative backdrop shapes */}
@@ -52,7 +52,7 @@ const HeroSection = () => {
             alignItems: 'center'
           }}
         >
-          {/* Left Text & Founder Profile Content */}
+          {/* Left Text Content */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
@@ -102,7 +102,7 @@ const HeroSection = () => {
               Rupesh Interiors crafts timeless residential and commercial spaces with a perfect balance of warmth, functionality, and clean minimalist elegance.
             </p>
 
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', alignItems: 'center', marginBottom: '32px' }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', alignItems: 'center' }}>
               <NavLink to="/book-consultation" className="btn-primary" style={{ padding: '14px 32px' }}>
                 <Calendar size={18} /> Book Free Consultation
               </NavLink>
@@ -111,46 +111,9 @@ const HeroSection = () => {
                 View Portfolio <ArrowRight size={18} />
               </NavLink>
             </div>
-
-            {/* Founder Profile Card (Replacing red rectangle) */}
-            <div
-              className="glass-card"
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '16px',
-                padding: '14px 22px',
-                borderRadius: '16px',
-                maxWidth: '420px',
-                background: 'rgba(255, 255, 255, 0.9)',
-                borderLeft: '4px solid #F3C08D',
-                boxShadow: '0 10px 30px rgba(0, 0, 0, 0.05)'
-              }}
-            >
-              <img
-                src="/owner.jpg"
-                alt="G. Dharmaraju - Founder & Principal Designer"
-                style={{
-                  width: '56px',
-                  height: '56px',
-                  borderRadius: '50%',
-                  objectFit: 'cover',
-                  border: '2px solid #F3C08D',
-                  flexShrink: 0
-                }}
-              />
-              <div>
-                <h4 style={{ fontSize: '1.05rem', color: '#1A1918', fontWeight: 700, margin: 0 }}>
-                  G. Dharmaraju
-                </h4>
-                <p style={{ fontSize: '0.82rem', color: '#7a7976', margin: '2px 0 0 0', fontWeight: 500 }}>
-                  Founder & Principal Designer
-                </p>
-              </div>
-            </div>
           </motion.div>
 
-          {/* Right Hero Visual Showcase (Black floating badge removed) */}
+          {/* Right Hero Visual Showcase */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -171,7 +134,7 @@ const HeroSection = () => {
                 alt="Rupesh Interiors - Home Showcase"
                 style={{
                   width: '100%',
-                  height: '460px',
+                  height: '440px',
                   objectFit: 'cover',
                   borderRadius: '16px',
                   display: 'block'
