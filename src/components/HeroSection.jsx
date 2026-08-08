@@ -52,7 +52,7 @@ const HeroSection = () => {
             alignItems: 'center'
           }}
         >
-          {/* Left Text Content & Minimal Founder Pill */}
+          {/* Left Text Content */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
@@ -102,7 +102,7 @@ const HeroSection = () => {
               Rupesh Interiors crafts timeless residential and commercial spaces with a perfect balance of warmth, functionality, and clean minimalist elegance.
             </p>
 
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', alignItems: 'center', marginBottom: '28px' }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', alignItems: 'center' }}>
               <NavLink to="/book-consultation" className="btn-primary" style={{ padding: '14px 32px' }}>
                 <Calendar size={18} /> Book Free Consultation
               </NavLink>
@@ -110,42 +110,6 @@ const HeroSection = () => {
               <NavLink to="/portfolio" className="btn-secondary" style={{ padding: '14px 28px' }}>
                 View Portfolio <ArrowRight size={18} />
               </NavLink>
-            </div>
-
-            {/* Seamless Minimal Founder Badge (No extra buttons, clean layout) */}
-            <div
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '14px',
-                padding: '10px 18px',
-                borderRadius: '40px',
-                background: 'rgba(255, 255, 255, 0.85)',
-                backdropFilter: 'blur(8px)',
-                border: '1px solid rgba(177, 176, 172, 0.3)',
-                boxShadow: '0 6px 20px rgba(0, 0, 0, 0.04)'
-              }}
-            >
-              <img
-                src="/owner.jpg"
-                alt="G. Dharmaraju"
-                style={{
-                  width: '46px',
-                  height: '46px',
-                  borderRadius: '50%',
-                  objectFit: 'cover',
-                  border: '2px solid #F3C08D',
-                  flexShrink: 0
-                }}
-              />
-              <div>
-                <h4 style={{ fontSize: '0.95rem', color: '#1A1918', fontWeight: 700, margin: 0 }}>
-                  G. Dharmaraju
-                </h4>
-                <p style={{ fontSize: '0.78rem', color: '#7a7976', margin: '2px 0 0 0', fontWeight: 500 }}>
-                  Founder & Principal Designer
-                </p>
-              </div>
             </div>
           </motion.div>
 
