@@ -36,7 +36,7 @@ const About = () => {
               <span style={{ color: '#F3C08D', fontWeight: 600, fontSize: '0.85rem', letterSpacing: '0.1em' }}>
                 THE FOUNDER
               </span>
-              <h2 style={{ fontSize: '2.4rem', margin: '10px 0 20px 0' }}>G. Dharmaraju</h2>
+              <h2 style={{ fontSize: '2.4rem', margin: '10px 0 10px 0' }}>G. Dharmaraju</h2>
               <h4 style={{ color: '#B1B0AC', fontWeight: 500, fontSize: '1.1rem', marginBottom: '24px' }}>
                 Founder & Principal Interior Designer
               </h4>
@@ -61,28 +61,45 @@ const About = () => {
               </div>
             </div>
 
-            {/* Profile / Studio Graphic */}
-            <div className="glass-card" style={{ padding: '40px', textAlign: 'center', background: '#F9F8F6' }}>
-              <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '24px' }}>
-                <Logo size="large" />
+            {/* Profile / Studio Graphic with Founder Photo */}
+            <div className="glass-card" style={{ padding: '36px', textAlign: 'center', background: '#F9F8F6' }}>
+              <img
+                src="/owner.jpg"
+                alt="G. Dharmaraju - Founder & Principal Designer"
+                style={{
+                  width: '180px',
+                  height: '180px',
+                  borderRadius: '50%',
+                  objectFit: 'cover',
+                  margin: '0 auto 20px auto',
+                  border: '4px solid #F3C08D',
+                  boxShadow: '0 10px 30px rgba(0,0,0,0.1)'
+                }}
+              />
+
+              <h3 style={{ fontSize: '1.3rem', color: '#1A1918', marginBottom: '4px' }}>G. Dharmaraju</h3>
+              <p style={{ fontSize: '0.88rem', color: '#7a7976', marginBottom: '20px' }}>Founder & Principal Designer</p>
+
+              <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
+                <Logo size="normal" />
               </div>
+
               <div
                 style={{
                   display: 'grid',
                   gridTemplateColumns: '1fr 1fr',
                   gap: '20px',
-                  marginTop: '30px',
                   borderTop: '1px solid rgba(177,176,172,0.3)',
-                  paddingTop: '30px'
+                  paddingTop: '20px'
                 }}
               >
                 <div>
-                  <h3 style={{ fontSize: '2.2rem', color: '#F3C08D' }}>35+</h3>
-                  <p style={{ fontSize: '0.85rem', color: '#7a7976' }}>Projects Completed</p>
+                  <h3 style={{ fontSize: '2rem', color: '#F3C08D' }}>35+</h3>
+                  <p style={{ fontSize: '0.82rem', color: '#7a7976' }}>Projects Completed</p>
                 </div>
                 <div>
-                  <h3 style={{ fontSize: '2.2rem', color: '#F3C08D' }}>25+</h3>
-                  <p style={{ fontSize: '0.85rem', color: '#7a7976' }}>Happy Families</p>
+                  <h3 style={{ fontSize: '2rem', color: '#F3C08D' }}>25+</h3>
+                  <p style={{ fontSize: '0.82rem', color: '#7a7976' }}>Happy Families</p>
                 </div>
               </div>
             </div>

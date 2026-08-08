@@ -13,7 +13,7 @@ const HeroSection = () => {
         alignItems: 'center',
         background: 'linear-gradient(135deg, #FFFFFF 0%, #F8F7F5 60%, #F3C08D 100%)',
         overflow: 'hidden',
-        padding: '60px 0 100px 0'
+        padding: '60px 0 80px 0'
       }}
     >
       {/* Decorative backdrop shapes */}
@@ -52,7 +52,7 @@ const HeroSection = () => {
             alignItems: 'center'
           }}
         >
-          {/* Text Content */}
+          {/* Left Text & Founder Profile Content */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
@@ -102,7 +102,7 @@ const HeroSection = () => {
               Rupesh Interiors crafts timeless residential and commercial spaces with a perfect balance of warmth, functionality, and clean minimalist elegance.
             </p>
 
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', alignItems: 'center' }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', alignItems: 'center', marginBottom: '32px' }}>
               <NavLink to="/book-consultation" className="btn-primary" style={{ padding: '14px 32px' }}>
                 <Calendar size={18} /> Book Free Consultation
               </NavLink>
@@ -111,9 +111,46 @@ const HeroSection = () => {
                 View Portfolio <ArrowRight size={18} />
               </NavLink>
             </div>
+
+            {/* Founder Profile Card (Replacing red rectangle) */}
+            <div
+              className="glass-card"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '16px',
+                padding: '14px 22px',
+                borderRadius: '16px',
+                maxWidth: '420px',
+                background: 'rgba(255, 255, 255, 0.9)',
+                borderLeft: '4px solid #F3C08D',
+                boxShadow: '0 10px 30px rgba(0, 0, 0, 0.05)'
+              }}
+            >
+              <img
+                src="/owner.jpg"
+                alt="G. Dharmaraju - Founder & Principal Designer"
+                style={{
+                  width: '56px',
+                  height: '56px',
+                  borderRadius: '50%',
+                  objectFit: 'cover',
+                  border: '2px solid #F3C08D',
+                  flexShrink: 0
+                }}
+              />
+              <div>
+                <h4 style={{ fontSize: '1.05rem', color: '#1A1918', fontWeight: 700, margin: 0 }}>
+                  G. Dharmaraju
+                </h4>
+                <p style={{ fontSize: '0.82rem', color: '#7a7976', margin: '2px 0 0 0', fontWeight: 500 }}>
+                  Founder & Principal Designer
+                </p>
+              </div>
+            </div>
           </motion.div>
 
-          {/* Hero Visual Card */}
+          {/* Right Hero Visual Showcase (Black floating badge removed) */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -140,42 +177,6 @@ const HeroSection = () => {
                   display: 'block'
                 }}
               />
-            </div>
-
-            {/* Floating Overlay Badge */}
-            <div
-              className="glass-card-dark"
-              style={{
-                position: 'absolute',
-                bottom: '-25px',
-                left: '-20px',
-                padding: '18px 24px',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '16px',
-                borderRadius: '16px'
-              }}
-            >
-              <div
-                style={{
-                  width: '48px',
-                  height: '48px',
-                  borderRadius: '12px',
-                  background: '#F3C08D',
-                  color: '#1A1918',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontWeight: 700,
-                  fontSize: '1.2rem'
-                }}
-              >
-                RD
-              </div>
-              <div>
-                <h4 style={{ fontSize: '0.95rem', color: '#FFFFFF' }}>G. Dharmaraju</h4>
-                <p style={{ fontSize: '0.8rem', color: '#B1B0AC' }}>Founder & Principal Designer</p>
-              </div>
             </div>
           </motion.div>
         </div>
