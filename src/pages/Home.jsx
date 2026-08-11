@@ -45,7 +45,7 @@ const Home = () => {
       {/* Hero */}
       <HeroSection />
 
-      {/* Stats Counter Bar */}
+      {/* Stats Counter Bar (7+ Years Experience · 84+ Projects · 75+ Customers) */}
       <StatsBar />
 
       {/* About Brief Section (Details of Company) */}
@@ -72,7 +72,7 @@ const Home = () => {
               </p>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginBottom: '28px' }}>
-                {['Custom Tailored Space Planning', '3D Design Visualization Before Execution', 'Transparent Pricing & No Hidden Costs', 'High Quality Durable Materials'].map((item) => (
+                {['Custom Tailored Space Planning', 'Transparent Pricing & No Hidden Costs', 'High Quality Durable Materials'].map((item) => (
                   <div key={item} style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <CheckCircle2 size={18} color="#F3C08D" />
                     <span style={{ fontSize: '0.95rem', color: '#1A1918', fontWeight: 500 }}>{item}</span>
@@ -134,7 +134,7 @@ const Home = () => {
                   Founder & Principal Interior Designer
                 </p>
                 <p style={{ color: '#4a4947', fontSize: '0.92rem', maxWidth: '520px', lineHeight: 1.5, margin: 0 }}>
-                  Leading Rupesh Interiors with 3+ years of space planning excellence across Hyderabad.
+                  Leading Rupesh Interiors with 7+ years of space planning excellence across Hyderabad.
                 </p>
               </div>
             </div>

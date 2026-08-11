@@ -6,20 +6,20 @@ const StatsBar = () => {
   const stats = [
     {
       icon: <Award size={32} color="#F3C08D" />,
-      number: '3+',
+      number: '7+',
       label: 'Years Experience',
       desc: 'Delivering bespoke space transformations'
     },
     {
       icon: <CheckCircle2 size={32} color="#F3C08D" />,
-      number: '35+',
+      number: '84+',
       label: 'Projects Completed',
       desc: 'Residential & commercial interior projects'
     },
     {
       icon: <Users size={32} color="#F3C08D" />,
-      number: '25+',
-      label: 'Happy Clients',
+      number: '75+',
+      label: 'Happy Customers',
       desc: 'Trusted for quality & timely delivery'
     }
   ];

@@ -79,10 +79,8 @@ const Footer = () => {
             </h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', fontSize: '0.92rem', color: '#B1B0AC' }}>
               <a
-                href="https://wa.me/919515958727"
-                target="_blank"
-                rel="noreferrer"
-                style={{ display: 'flex', alignItems: 'center', gap: '12px', color: '#B1B0AC' }}
+                href="tel:+919515958727"
+                style={{ display: 'flex', alignItems: 'center', gap: '12px', color: '#B1B0AC', textDecoration: 'none' }}
                 onMouseEnter={(e) => (e.currentTarget.style.color = '#F3C08D')}
                 onMouseLeave={(e) => (e.currentTarget.style.color = '#B1B0AC')}
               >
@@ -92,7 +90,7 @@ const Footer = () => {
 
               <a
                 href="mailto:raju3469@gmail.com"
-                style={{ display: 'flex', alignItems: 'center', gap: '12px', color: '#B1B0AC' }}
+                style={{ display: 'flex', alignItems: 'center', gap: '12px', color: '#B1B0AC', textDecoration: 'none' }}
                 onMouseEnter={(e) => (e.currentTarget.style.color = '#F3C08D')}
                 onMouseLeave={(e) => (e.currentTarget.style.color = '#B1B0AC')}
               >
@@ -102,7 +100,7 @@ const Footer = () => {
 
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
                 <MapPin size={22} color="#F3C08D" style={{ flexShrink: 0, marginTop: '2px' }} />
-                <span>Rupesh Interiors, Bachupally / Miyapur Highway, Hyderabad, Telangana</span>
+                <span>Rupesh Interiors, Nizampet, Hyderabad, Telangana, India</span>
               </div>
 
               <a

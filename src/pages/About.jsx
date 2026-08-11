@@ -42,7 +42,7 @@ const About = () => {
               </h4>
 
               <p style={{ color: '#4a4947', marginBottom: '16px', lineHeight: 1.7 }}>
-                With over 3+ years of dedicated interior architectural design experience across Hyderabad and neighboring regions, <strong>G. Dharmaraju</strong> founded Rupesh Interiors to bring high-end aesthetic refinement accessible to homeowners.
+                With over <strong>7+ years</strong> of dedicated interior architectural design experience across Nizampet, Hyderabad and neighboring regions, <strong>G. Dharmaraju</strong> founded Rupesh Interiors to bring high-end aesthetic refinement accessible to homeowners.
               </p>
               <p style={{ color: '#4a4947', marginBottom: '24px', lineHeight: 1.7 }}>
                 Our signature design approach combines luxury minimalism, space optimization, warm neutral palettes, and meticulous craftsman precision.
@@ -94,12 +94,12 @@ const About = () => {
                 }}
               >
                 <div>
-                  <h3 style={{ fontSize: '2rem', color: '#F3C08D' }}>35+</h3>
+                  <h3 style={{ fontSize: '2rem', color: '#F3C08D' }}>84+</h3>
                   <p style={{ fontSize: '0.82rem', color: '#7a7976' }}>Projects Completed</p>
                 </div>
                 <div>
-                  <h3 style={{ fontSize: '2rem', color: '#F3C08D' }}>25+</h3>
-                  <p style={{ fontSize: '0.82rem', color: '#7a7976' }}>Happy Families</p>
+                  <h3 style={{ fontSize: '2rem', color: '#F3C08D' }}>75+</h3>
+                  <p style={{ fontSize: '0.82rem', color: '#7a7976' }}>Happy Customers</p>
                 </div>
               </div>
             </div>

@@ -192,8 +192,10 @@ const Contact = () => {
                       <Phone size={22} />
                     </div>
                     <div>
-                      <span style={{ fontSize: '0.8rem', color: '#B1B0AC', display: 'block' }}>Phone / WhatsApp</span>
-                      <strong style={{ fontSize: '1.1rem', color: '#1A1918' }}>+91 95159 58727</strong>
+                      <span style={{ fontSize: '0.8rem', color: '#B1B0AC', display: 'block' }}>Call Us (Dialer)</span>
+                      <a href="tel:+919515958727" style={{ textDecoration: 'none' }}>
+                        <strong style={{ fontSize: '1.1rem', color: '#1A1918' }}>+91 95159 58727</strong>
+                      </a>
                     </div>
                   </div>
 
@@ -214,7 +216,9 @@ const Contact = () => {
                     </div>
                     <div>
                       <span style={{ fontSize: '0.8rem', color: '#B1B0AC', display: 'block' }}>Email Address</span>
-                      <strong style={{ fontSize: '1.05rem', color: '#1A1918' }}>raju3469@gmail.com</strong>
+                      <a href="mailto:raju3469@gmail.com" style={{ textDecoration: 'none' }}>
+                        <strong style={{ fontSize: '1.05rem', color: '#1A1918' }}>raju3469@gmail.com</strong>
+                      </a>
                     </div>
                   </div>
 
@@ -236,7 +240,7 @@ const Contact = () => {
                     <div>
                       <span style={{ fontSize: '0.8rem', color: '#B1B0AC', display: 'block' }}>Location</span>
                       <strong style={{ fontSize: '1rem', color: '#1A1918' }}>
-                        Hyderabad, Telangana, India
+                        Nizampet, Hyderabad, Telangana, India
                       </strong>
                     </div>
                   </div>
