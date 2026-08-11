@@ -5,77 +5,77 @@ import { X, ZoomIn } from 'lucide-react';
 const portfolioData = [
   {
     id: 1,
+    title: 'Modern Taupe & Gold Slat Sliding Wardrobe',
+    category: 'Wardrobe',
+    image: '/portfolio/wardrobe1.jpg',
+    description: 'Bespoke matte taupe & charcoal sliding wardrobe with brushed gold metal strip inlays and ergonomic handles.'
+  },
+  {
+    id: 2,
+    title: 'Geometric Slate Blue & White Loft Wardrobe',
+    category: 'Wardrobe',
+    image: '/portfolio/wardrobe2.jpg',
+    description: 'Dual-tone geometric slate blue and white sliding shutters with full-height top loft storage and integrated window seat.'
+  },
+  {
+    id: 3,
+    title: 'High-Gloss White & Ocean Teal Sliding Wardrobe',
+    category: 'Wardrobe',
+    image: '/portfolio/wardrobe3.jpg',
+    description: 'Glossy acrylic white and ocean teal accent band sliding wardrobe with seamless top loft cabinets and side wardrobe unit.'
+  },
+  {
+    id: 4,
+    title: 'Warm Cream & Caramel Sliding Wardrobe',
+    category: 'Wardrobe',
+    image: '/portfolio/wardrobe4.jpg',
+    description: 'Minimalist high-gloss cream and caramel stripe sliding wardrobe with top storage units and false ceiling profile lighting.'
+  },
+  {
+    id: 5,
+    title: 'Champagne Gold & Charcoal Custom Wardrobe',
+    category: 'Wardrobe',
+    image: '/portfolio/wardrobe5.jpg',
+    description: 'Luxury champagne gold laminate wardrobe with charcoal grey accent band, brass handles, and overhead loft storage.'
+  },
+  {
+    id: 6,
     title: 'Wooden Panel False Ceiling & Fan Recesses',
     category: 'Ceiling',
     image: '/services/ceiling_wood_design.jpg',
     description: 'Custom wooden ceiling panels with integrated peripheral cove lighting and recessed ceiling fan mounts.'
   },
   {
-    id: 2,
+    id: 7,
     title: 'Luxury Green & Patterned Double Drapes',
     category: 'Curtain',
     image: '/services/curtain_green_pattern.jpg',
     description: 'Dual-tone luxury green drapes combined with traditional geometric patterned inner curtains.'
   },
   {
-    id: 3,
+    id: 8,
     title: 'Warm Ambient Cove & False Ceiling Lighting',
     category: 'Ceiling',
     image: '/services/lighting_cove_profile.jpg',
     description: 'Minimalist warm perimeter cove LED false ceiling lighting with accent circular wall backlight and TV console illumination.'
   },
   {
-    id: 4,
-    title: 'Classic Wooden Window Frame & Drapes',
-    category: 'Curtain',
-    image: '/services/windows_wooden_frame.jpg',
-    description: 'Bespoke solid wood window casement with decorative curtain rod and matching tie-back drapes.'
-  },
-  {
-    id: 5,
-    title: 'Elegant Beige Window Sheers & Pleated Drapes',
-    category: 'Curtain',
-    image: '/services/curtain_beige.jpg',
-    description: 'Floor-to-ceiling pleated beige blackout drapes with sheer white inner curtains for soft sunlight filtering.'
-  },
-  {
-    id: 6,
+    id: 9,
     title: 'Traditional Wooden Pooja Mandir with Etched Glass',
     category: 'Pooja Unit',
     image: '/services/pooja_glass_mandir.jpg',
     description: 'Custom wood pooja cabinet with Ganesha etched glass doors, built-in spotlighting, auspicious symbols, and bottom storage drawers.'
   },
   {
-    id: 7,
+    id: 10,
     title: 'Modern White CNC Laser-Cut Om Mandir',
     category: 'Pooja Unit',
     image: '/services/pooja_cnc_om_mandir.jpg',
     description: 'Laser-cut CNC Om lotus backboard pooja mandir unit with jaali doors, spotlight illumination, and dark glossy bottom drawers.'
-  },
-  {
-    id: 8,
-    title: 'Modern Modular Kitchen & Island',
-    category: 'Modular Kitchen',
-    image: 'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80',
-    description: 'Acrylic finish handleless shutters with quartz countertop and built-in appliances.'
-  },
-  {
-    id: 9,
-    title: 'Luxury Master Bedroom Wardrobe',
-    category: 'Wardrobe',
-    image: 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=800&q=80',
-    description: 'Floor-to-ceiling sliding wardrobe with tinted glass & integrated LED warm profile lighting.'
-  },
-  {
-    id: 10,
-    title: 'Custom Floating TV Panel Unit',
-    category: 'TV Unit',
-    image: 'https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80',
-    description: 'Louvers slat wooden backdrop with marble veneer wall mount and hidden cable tray.'
   }
 ];
 
-const categories = ['All', 'Ceiling', 'Curtain', 'Pooja Unit', 'Modular Kitchen', 'Wardrobe', 'TV Unit'];
+const categories = ['All', 'Wardrobe', 'Ceiling', 'Curtain', 'Pooja Unit'];
 
 const PortfolioGrid = ({ limit }) => {
   const [activeCategory, setActiveCategory] = useState('All');
@@ -142,7 +142,7 @@ const PortfolioGrid = ({ limit }) => {
               style={{ overflow: 'hidden', cursor: 'pointer' }}
               onClick={() => setSelectedItem(item)}
             >
-              <div style={{ position: 'relative', height: '260px', overflow: 'hidden' }}>
+              <div style={{ position: 'relative', height: '280px', overflow: 'hidden' }}>
                 <img
                   src={item.image}
                   alt={item.title}
@@ -245,7 +245,7 @@ const PortfolioGrid = ({ limit }) => {
             <img
               src={selectedItem.image}
               alt={selectedItem.title}
-              style={{ width: '100%', maxHeight: '420px', objectFit: 'cover' }}
+              style={{ width: '100%', maxHeight: '480px', objectFit: 'contain', background: '#f4f4f3' }}
             />
 
             <div style={{ padding: '24px' }}>
