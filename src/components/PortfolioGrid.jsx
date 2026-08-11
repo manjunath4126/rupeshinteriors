@@ -40,34 +40,69 @@ const portfolioData = [
   },
   {
     id: 6,
+    title: 'White & Teak Wood Grain Grooved Wardrobe',
+    category: 'Wardrobe',
+    image: '/portfolio/wardrobe6.jpg',
+    description: 'Natural teak wood grain laminate frame with glossy white sliding doors, horizontal groove accents, and overhead storage loft.'
+  },
+  {
+    id: 7,
+    title: 'Dual-Tone Steel Blue & Ice White Wardrobe',
+    category: 'Wardrobe',
+    image: '/portfolio/wardrobe7.jpg',
+    description: 'Sleek steel blue & ice white panel sliding wardrobe with recessed dark aluminium profile handles.'
+  },
+  {
+    id: 8,
+    title: 'Sage Green & Ivory Loft Wardrobe with Mirror',
+    category: 'Wardrobe',
+    image: '/portfolio/wardrobe8.jpg',
+    description: 'Matte sage green and ivory white sliding wardrobe featuring a full-length vanity mirror and top storage cabinets.'
+  },
+  {
+    id: 9,
+    title: 'Blush Pink & White Chevron Sliding Wardrobe',
+    category: 'Wardrobe',
+    image: '/portfolio/wardrobe9.jpg',
+    description: 'Modern blush pink and crisp white geometric chevron pattern sliding wardrobe with matching overhead loft cabinets.'
+  },
+  {
+    id: 10,
+    title: 'Charcoal Grey Chevron Wardrobe with Window Bench',
+    category: 'Wardrobe',
+    image: '/portfolio/wardrobe10.jpg',
+    description: 'High-gloss charcoal grey & white chevron sliding wardrobe integrated with a cozy padded L-shaped window seating bench.'
+  },
+  {
+    id: 11,
     title: 'Wooden Panel False Ceiling & Fan Recesses',
     category: 'Ceiling',
     image: '/services/ceiling_wood_design.jpg',
     description: 'Custom wooden ceiling panels with integrated peripheral cove lighting and recessed ceiling fan mounts.'
   },
   {
-    id: 7,
+    id: 12,
     title: 'Luxury Green & Patterned Double Drapes',
     category: 'Curtain',
     image: '/services/curtain_green_pattern.jpg',
     description: 'Dual-tone luxury green drapes combined with traditional geometric patterned inner curtains.'
   },
   {
-    id: 8,
+    id: 13,
     title: 'Warm Ambient Cove & False Ceiling Lighting',
     category: 'Ceiling',
     image: '/services/lighting_cove_profile.jpg',
     description: 'Minimalist warm perimeter cove LED false ceiling lighting with accent circular wall backlight and TV console illumination.'
   },
   {
-    id: 9,
+    id: 14,
     title: 'Traditional Wooden Pooja Mandir with Etched Glass',
     category: 'Pooja Unit',
     image: '/services/pooja_glass_mandir.jpg',
     description: 'Custom wood pooja cabinet with Ganesha etched glass doors, built-in spotlighting, auspicious symbols, and bottom storage drawers.'
   },
   {
-    id: 10,
+    id: 15,
     title: 'Modern White CNC Laser-Cut Om Mandir',
     category: 'Pooja Unit',
     image: '/services/pooja_cnc_om_mandir.jpg',
