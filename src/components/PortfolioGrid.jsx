@@ -103,34 +103,69 @@ const portfolioData = [
   },
   {
     id: 15,
+    title: 'Marble Wall Backing & Fluted Louver TV Unit',
+    category: 'TV Unit',
+    image: '/portfolio/tvunit1.jpg',
+    description: 'High-end white marble slab TV wall backdrop bordered by warm fluted wooden louvers, LED perimeter backlight, and floating console drawers.'
+  },
+  {
+    id: 16,
+    title: 'Ambient LED Backlit TV Wall & Display Shelf',
+    category: 'TV Unit',
+    image: '/portfolio/tvunit2.jpg',
+    description: 'Contemporary floating TV backboard panel with warm LED backlight, fluted accent wall, and integrated tall wooden display bookcase.'
+  },
+  {
+    id: 17,
+    title: 'Luxury Gold Vein Marble & Glass Display TV Unit',
+    category: 'TV Unit',
+    image: '/portfolio/tvunit3.jpg',
+    description: 'Bespoke gold-veined marble feature wall TV unit flanked by dark wood fluted louvers, illuminated glass display cabinet, and white drawers.'
+  },
+  {
+    id: 18,
+    title: 'Sage Green & White Countertop Crockery Unit',
+    category: 'Crockery Unit',
+    image: '/portfolio/crockery1.jpg',
+    description: 'Clean dual-tone sage green base cabinets with white quartz countertop, integrated sink, and upper white loft storage cabinets.'
+  },
+  {
+    id: 19,
+    title: 'Modern Kitchen Crockery Counter & Breakfast Bar',
+    category: 'Crockery Unit',
+    image: '/portfolio/crockery2.jpg',
+    description: 'Luxury open-plan kitchen island & crockery unit with marble front panel, warm LED pendant lights, glass display shelves, and false ceiling LED strip.'
+  },
+  {
+    id: 20,
     title: 'Wooden Panel False Ceiling & Fan Recesses',
     category: 'Ceiling',
     image: '/services/ceiling_wood_design.jpg',
     description: 'Custom wooden ceiling panels with integrated peripheral cove lighting and recessed ceiling fan mounts.'
   },
   {
-    id: 16,
+    id: 21,
     title: 'Luxury Green & Patterned Double Drapes',
     category: 'Curtain',
     image: '/services/curtain_green_pattern.jpg',
     description: 'Dual-tone luxury green drapes combined with traditional geometric patterned inner curtains.'
   },
   {
-    id: 17,
+    id: 22,
     title: 'Warm Ambient Cove & False Ceiling Lighting',
     category: 'Ceiling',
     image: '/services/lighting_cove_profile.jpg',
     description: 'Minimalist warm perimeter cove LED false ceiling lighting with accent circular wall backlight and TV console illumination.'
   },
   {
-    id: 18,
+    id: 23,
     title: 'Traditional Wooden Pooja Mandir with Etched Glass',
     category: 'Pooja Unit',
     image: '/services/pooja_glass_mandir.jpg',
     description: 'Custom wood pooja cabinet with Ganesha etched glass doors, built-in spotlighting, auspicious symbols, and bottom storage drawers.'
   },
   {
-    id: 19,
+    id: 24,
     title: 'Modern White CNC Laser-Cut Om Mandir',
     category: 'Pooja Unit',
     image: '/services/pooja_cnc_om_mandir.jpg',
@@ -138,7 +173,7 @@ const portfolioData = [
   }
 ];
 
-const categories = ['All', 'Wardrobe', 'Ceiling', 'Curtain', 'Pooja Unit'];
+const categories = ['All', 'Wardrobe', 'TV Unit', 'Crockery Unit', 'Ceiling', 'Curtain', 'Pooja Unit'];
 
 const PortfolioGrid = ({ limit }) => {
   const [activeCategory, setActiveCategory] = useState('All');
