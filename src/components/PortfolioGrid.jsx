@@ -75,34 +75,62 @@ const portfolioData = [
   },
   {
     id: 11,
+    title: 'Glossy Cream 3-Door Sliding Gold Strip Wardrobe',
+    category: 'Wardrobe',
+    image: '/portfolio/wardrobe11.jpg',
+    description: '3-door glossy cream sliding wardrobe featuring intersecting gold brass metal strip inlays and a slate blue top storage loft.'
+  },
+  {
+    id: 12,
+    title: 'Royal Blue & Off-White Horizontal Band Wardrobe',
+    category: 'Wardrobe',
+    image: '/portfolio/wardrobe12.jpg',
+    description: 'High-gloss royal blue sliding doors with an off-white middle accent band and grey top loft cabinets.'
+  },
+  {
+    id: 13,
+    title: 'Soft Powder Blue & Silver Striped Wardrobe',
+    category: 'Wardrobe',
+    image: '/portfolio/wardrobe13.jpg',
+    description: 'Full-wall soft powder blue sliding wardrobe with horizontal silver profile strips and top storage lofts.'
+  },
+  {
+    id: 14,
+    title: 'Glossy Grey & Teak Arch Accent Wardrobe',
+    category: 'Wardrobe',
+    image: '/portfolio/wardrobe14.jpg',
+    description: 'Contemporary glossy light grey sliding wardrobe with warm teak wood arch side accents and brass profile striping.'
+  },
+  {
+    id: 15,
     title: 'Wooden Panel False Ceiling & Fan Recesses',
     category: 'Ceiling',
     image: '/services/ceiling_wood_design.jpg',
     description: 'Custom wooden ceiling panels with integrated peripheral cove lighting and recessed ceiling fan mounts.'
   },
   {
-    id: 12,
+    id: 16,
     title: 'Luxury Green & Patterned Double Drapes',
     category: 'Curtain',
     image: '/services/curtain_green_pattern.jpg',
     description: 'Dual-tone luxury green drapes combined with traditional geometric patterned inner curtains.'
   },
   {
-    id: 13,
+    id: 17,
     title: 'Warm Ambient Cove & False Ceiling Lighting',
     category: 'Ceiling',
     image: '/services/lighting_cove_profile.jpg',
     description: 'Minimalist warm perimeter cove LED false ceiling lighting with accent circular wall backlight and TV console illumination.'
   },
   {
-    id: 14,
+    id: 18,
     title: 'Traditional Wooden Pooja Mandir with Etched Glass',
     category: 'Pooja Unit',
     image: '/services/pooja_glass_mandir.jpg',
     description: 'Custom wood pooja cabinet with Ganesha etched glass doors, built-in spotlighting, auspicious symbols, and bottom storage drawers.'
   },
   {
-    id: 15,
+    id: 19,
     title: 'Modern White CNC Laser-Cut Om Mandir',
     category: 'Pooja Unit',
     image: '/services/pooja_cnc_om_mandir.jpg',
