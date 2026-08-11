@@ -69,7 +69,8 @@ const HeroSection = () => {
                 fontSize: '0.85rem',
                 fontWeight: 600,
                 color: '#1A1918',
-                marginBottom: '20px'
+                marginBottom: '20px',
+                fontFamily: 'var(--font-title)'
               }}
             >
               <Sparkles size={16} color="#1A1918" />
@@ -78,25 +79,28 @@ const HeroSection = () => {
 
             <h1
               style={{
-                fontFamily: "'Playfair Display', serif",
-                fontSize: 'clamp(2.5rem, 5vw, 3.8rem)',
+                fontFamily: 'var(--font-heading)',
+                fontSize: 'clamp(2.2rem, 4.5vw, 3.5rem)',
                 lineHeight: 1.15,
                 color: '#1A1918',
                 marginBottom: '20px',
-                fontWeight: 700
+                fontWeight: 700,
+                letterSpacing: '0.03em'
               }}
             >
               Spaces That Tell <br />
-              <span style={{ color: '#F3C08D', fontStyle: 'italic' }}>Your Unique Story.</span>
+              <span style={{ color: '#F3C08D' }}>Your Unique Story.</span>
             </h1>
 
             <p
               style={{
-                fontSize: '1.1rem',
+                fontSize: '1.05rem',
                 color: '#4a4947',
                 marginBottom: '32px',
                 maxWidth: '520px',
-                lineHeight: 1.6
+                lineHeight: 1.6,
+                fontFamily: 'var(--font-body)',
+                fontWeight: 500
               }}
             >
               Rupesh Interiors crafts timeless residential and commercial spaces with a perfect balance of warmth, functionality, and clean minimalist elegance.

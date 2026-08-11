@@ -67,17 +67,18 @@ const StatsBar = () => {
               <div>
                 <h3
                   style={{
-                    fontFamily: "'Playfair Display', serif",
-                    fontSize: '2.4rem',
+                    fontFamily: 'var(--font-heading)',
+                    fontSize: '2.2rem',
                     color: '#F3C08D',
                     lineHeight: 1,
-                    marginBottom: '4px'
+                    marginBottom: '4px',
+                    letterSpacing: '0.04em'
                   }}
                 >
                   {stat.number}
                 </h3>
-                <h4 style={{ fontSize: '1rem', color: '#FFFFFF', fontWeight: 600 }}>{stat.label}</h4>
-                <p style={{ fontSize: '0.82rem', color: '#B1B0AC', marginTop: '2px' }}>{stat.desc}</p>
+                <h4 style={{ fontSize: '0.95rem', color: '#FFFFFF', fontWeight: 600, fontFamily: 'var(--font-title)', textTransform: 'none' }}>{stat.label}</h4>
+                <p style={{ fontSize: '0.82rem', color: '#B1B0AC', marginTop: '2px', fontFamily: 'var(--font-body)', fontWeight: 500 }}>{stat.desc}</p>
               </div>
             </motion.div>
           ))}

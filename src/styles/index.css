@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Syncopate:wght@700&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap');
 
 :root {
   /* Brand Color Palette */
@@ -15,9 +15,10 @@
   
   --pure-white: #FFFFFF;
   
-  /* Typography */
-  --font-heading: 'Playfair Display', serif, system-ui;
-  --font-body: 'Outfit', sans-serif, system-ui;
+  /* Typography System */
+  --font-heading: 'Horizon', 'Syncopate', sans-serif;
+  --font-title: 'Google Sans', 'Product Sans', 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'Poppins', sans-serif;
   
   /* Glassmorphism settings */
   --glass-bg: rgba(255, 255, 255, 0.75);
@@ -46,20 +47,31 @@ body {
   background-color: var(--pure-white);
   color: var(--charcoal-black);
   font-family: var(--font-body);
+  font-weight: 500; /* Poppins Medium */
   line-height: 1.6;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
 
+/* Headings: Horizon Font Family */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   color: var(--charcoal-black);
-  font-weight: 600;
-  letter-spacing: -0.01em;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
-p {
-  color: #4a4947;
+p, span, li, label, input, select, textarea {
+  font-family: var(--font-body);
+  font-weight: 500; /* Poppins Medium */
+}
+
+/* Titles & Navigation: Google Sans */
+nav a, .btn-primary, .btn-secondary, .btn-outline-apricot, .title-text {
+  font-family: var(--font-title) !important;
+  font-weight: 600;
+  letter-spacing: 0.01em;
 }
 
 a {
@@ -69,7 +81,7 @@ a {
 
 button {
   cursor: pointer;
-  font-family: var(--font-body);
+  font-family: var(--font-title);
   border: none;
   outline: none;
 }
