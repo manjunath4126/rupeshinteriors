@@ -12,168 +12,196 @@ const portfolioData = [
   },
   {
     id: 2,
-    title: 'Geometric Slate Blue & White Loft Wardrobe',
-    category: 'Wardrobe',
-    image: '/portfolio/wardrobe2.jpg',
-    description: 'Dual-tone geometric slate blue and white sliding shutters with full-height top loft storage and integrated window seat.'
-  },
-  {
-    id: 3,
-    title: 'High-Gloss White & Ocean Teal Sliding Wardrobe',
-    category: 'Wardrobe',
-    image: '/portfolio/wardrobe3.jpg',
-    description: 'Glossy acrylic white and ocean teal accent band sliding wardrobe with seamless top loft cabinets and side wardrobe unit.'
-  },
-  {
-    id: 4,
-    title: 'Warm Cream & Caramel Sliding Wardrobe',
-    category: 'Wardrobe',
-    image: '/portfolio/wardrobe4.jpg',
-    description: 'Minimalist high-gloss cream and caramel stripe sliding wardrobe with top storage units and false ceiling profile lighting.'
-  },
-  {
-    id: 5,
-    title: 'Champagne Gold & Charcoal Custom Wardrobe',
-    category: 'Wardrobe',
-    image: '/portfolio/wardrobe5.jpg',
-    description: 'Luxury champagne gold laminate wardrobe with charcoal grey accent band, brass handles, and overhead loft storage.'
-  },
-  {
-    id: 6,
-    title: 'White & Teak Wood Grain Grooved Wardrobe',
-    category: 'Wardrobe',
-    image: '/portfolio/wardrobe6.jpg',
-    description: 'Natural teak wood grain laminate frame with glossy white sliding doors, horizontal groove accents, and overhead storage loft.'
-  },
-  {
-    id: 7,
-    title: 'Dual-Tone Steel Blue & Ice White Wardrobe',
-    category: 'Wardrobe',
-    image: '/portfolio/wardrobe7.jpg',
-    description: 'Sleek steel blue & ice white panel sliding wardrobe with recessed dark aluminium profile handles.'
-  },
-  {
-    id: 8,
-    title: 'Sage Green & Ivory Loft Wardrobe with Mirror',
-    category: 'Wardrobe',
-    image: '/portfolio/wardrobe8.jpg',
-    description: 'Matte sage green and ivory white sliding wardrobe featuring a full-length vanity mirror and top storage cabinets.'
-  },
-  {
-    id: 9,
-    title: 'Blush Pink & White Chevron Sliding Wardrobe',
-    category: 'Wardrobe',
-    image: '/portfolio/wardrobe9.jpg',
-    description: 'Modern blush pink and crisp white geometric chevron pattern sliding wardrobe with matching overhead loft cabinets.'
-  },
-  {
-    id: 10,
-    title: 'Charcoal Grey Chevron Wardrobe with Window Bench',
-    category: 'Wardrobe',
-    image: '/portfolio/wardrobe10.jpg',
-    description: 'High-gloss charcoal grey & white chevron sliding wardrobe integrated with a cozy padded L-shaped window seating bench.'
-  },
-  {
-    id: 11,
-    title: 'Glossy Cream 3-Door Sliding Gold Strip Wardrobe',
-    category: 'Wardrobe',
-    image: '/portfolio/wardrobe11.jpg',
-    description: '3-door glossy cream sliding wardrobe featuring intersecting gold brass metal strip inlays and a slate blue top storage loft.'
-  },
-  {
-    id: 12,
-    title: 'Royal Blue & Off-White Horizontal Band Wardrobe',
-    category: 'Wardrobe',
-    image: '/portfolio/wardrobe12.jpg',
-    description: 'High-gloss royal blue sliding doors with an off-white middle accent band and grey top loft cabinets.'
-  },
-  {
-    id: 13,
-    title: 'Soft Powder Blue & Silver Striped Wardrobe',
-    category: 'Wardrobe',
-    image: '/portfolio/wardrobe13.jpg',
-    description: 'Full-wall soft powder blue sliding wardrobe with horizontal silver profile strips and top storage lofts.'
-  },
-  {
-    id: 14,
-    title: 'Glossy Grey & Teak Arch Accent Wardrobe',
-    category: 'Wardrobe',
-    image: '/portfolio/wardrobe14.jpg',
-    description: 'Contemporary glossy light grey sliding wardrobe with warm teak wood arch side accents and brass profile striping.'
-  },
-  {
-    id: 15,
     title: 'Marble Wall Backing & Fluted Louver TV Unit',
     category: 'TV Unit',
     image: '/portfolio/tvunit1.jpg',
     description: 'High-end white marble slab TV wall backdrop bordered by warm fluted wooden louvers, LED perimeter backlight, and floating console drawers.'
   },
   {
-    id: 16,
-    title: 'Ambient LED Backlit TV Wall & Display Shelf',
-    category: 'TV Unit',
-    image: '/portfolio/tvunit2.jpg',
-    description: 'Contemporary floating TV backboard panel with warm LED backlight, fluted accent wall, and integrated tall wooden display bookcase.'
-  },
-  {
-    id: 17,
-    title: 'Luxury Gold Vein Marble & Glass Display TV Unit',
-    category: 'TV Unit',
-    image: '/portfolio/tvunit3.jpg',
-    description: 'Bespoke gold-veined marble feature wall TV unit flanked by dark wood fluted louvers, illuminated glass display cabinet, and white drawers.'
-  },
-  {
-    id: 18,
+    id: 3,
     title: 'Sage Green & White Countertop Crockery Unit',
     category: 'Crockery Unit',
     image: '/portfolio/crockery1.jpg',
     description: 'Clean dual-tone sage green base cabinets with white quartz countertop, integrated sink, and upper white loft storage cabinets.'
   },
   {
-    id: 19,
-    title: 'Modern Kitchen Crockery Counter & Breakfast Bar',
-    category: 'Crockery Unit',
-    image: '/portfolio/crockery2.jpg',
-    description: 'Luxury open-plan kitchen island & crockery unit with marble front panel, warm LED pendant lights, glass display shelves, and false ceiling LED strip.'
+    id: 4,
+    title: 'Floating Teak Wall-Mounted Dressing Table',
+    category: 'Custom Furniture',
+    image: '/portfolio/furniture1.jpg',
+    description: 'Minimalist solid teak wall-mounted dressing table with full-length mirror, wave-carved drawer handle, and open storage cubbies.'
   },
   {
-    id: 20,
-    title: 'Wooden Panel False Ceiling & Fan Recesses',
-    category: 'Ceiling',
-    image: '/services/ceiling_wood_design.jpg',
-    description: 'Custom wooden ceiling panels with integrated peripheral cove lighting and recessed ceiling fan mounts.'
-  },
-  {
-    id: 21,
-    title: 'Luxury Green & Patterned Double Drapes',
-    category: 'Curtain',
-    image: '/services/curtain_green_pattern.jpg',
-    description: 'Dual-tone luxury green drapes combined with traditional geometric patterned inner curtains.'
-  },
-  {
-    id: 22,
-    title: 'Warm Ambient Cove & False Ceiling Lighting',
-    category: 'Ceiling',
-    image: '/services/lighting_cove_profile.jpg',
-    description: 'Minimalist warm perimeter cove LED false ceiling lighting with accent circular wall backlight and TV console illumination.'
-  },
-  {
-    id: 23,
+    id: 5,
     title: 'Traditional Wooden Pooja Mandir with Etched Glass',
     category: 'Pooja Unit',
     image: '/services/pooja_glass_mandir.jpg',
     description: 'Custom wood pooja cabinet with Ganesha etched glass doors, built-in spotlighting, auspicious symbols, and bottom storage drawers.'
   },
   {
-    id: 24,
+    id: 6,
+    title: 'Geometric Slate Blue & White Loft Wardrobe',
+    category: 'Wardrobe',
+    image: '/portfolio/wardrobe2.jpg',
+    description: 'Dual-tone geometric slate blue and white sliding shutters with full-height top loft storage and integrated window seat.'
+  },
+  {
+    id: 7,
+    title: 'Ambient LED Backlit TV Wall & Display Shelf',
+    category: 'TV Unit',
+    image: '/portfolio/tvunit2.jpg',
+    description: 'Contemporary floating TV backboard panel with warm LED backlight, fluted accent wall, and integrated tall wooden display bookcase.'
+  },
+  {
+    id: 8,
+    title: 'Illuminated Wooden Hall Partition Divider',
+    category: 'Custom Furniture',
+    image: '/portfolio/furniture3.jpg',
+    description: 'Architectural wooden hall partition screen with integrated warm spotlighting and floating white accent display boxes.'
+  },
+  {
+    id: 9,
+    title: 'Modern Kitchen Crockery Counter & Breakfast Bar',
+    category: 'Crockery Unit',
+    image: '/portfolio/crockery2.jpg',
+    description: 'Luxury open-plan kitchen island & crockery unit with marble front panel, warm LED pendant lights, glass display shelves, and false ceiling LED strip.'
+  },
+  {
+    id: 10,
+    title: 'Wooden Panel False Ceiling & Fan Recesses',
+    category: 'Ceiling',
+    image: '/services/ceiling_wood_design.jpg',
+    description: 'Custom wooden ceiling panels with integrated peripheral cove lighting and recessed ceiling fan mounts.'
+  },
+  {
+    id: 11,
+    title: 'High-Gloss White & Ocean Teal Sliding Wardrobe',
+    category: 'Wardrobe',
+    image: '/portfolio/wardrobe3.jpg',
+    description: 'Glossy acrylic white and ocean teal accent band sliding wardrobe with seamless top loft cabinets and side wardrobe unit.'
+  },
+  {
+    id: 12,
+    title: 'Contemporary Walnut Dressing Cabinet Unit',
+    category: 'Custom Furniture',
+    image: '/portfolio/furniture2.jpg',
+    description: 'Bespoke dark walnut dressing cabinet with full vanity mirror, white dual drawers, and open glass display shelves.'
+  },
+  {
+    id: 13,
+    title: 'Luxury Gold Vein Marble & Glass Display TV Unit',
+    category: 'TV Unit',
+    image: '/portfolio/tvunit3.jpg',
+    description: 'Bespoke gold-veined marble feature wall TV unit flanked by dark wood fluted louvers, illuminated glass display cabinet, and white drawers.'
+  },
+  {
+    id: 14,
+    title: 'Luxury Green & Patterned Double Drapes',
+    category: 'Curtain',
+    image: '/services/curtain_green_pattern.jpg',
+    description: 'Dual-tone luxury green drapes combined with traditional geometric patterned inner curtains.'
+  },
+  {
+    id: 15,
+    title: 'Warm Cream & Caramel Sliding Wardrobe',
+    category: 'Wardrobe',
+    image: '/portfolio/wardrobe4.jpg',
+    description: 'Minimalist high-gloss cream and caramel stripe sliding wardrobe with top storage units and false ceiling profile lighting.'
+  },
+  {
+    id: 16,
+    title: 'Teak & White Box Cubby Room Partition Screen',
+    category: 'Custom Furniture',
+    image: '/portfolio/furniture4.jpg',
+    description: 'Designer teak wood room divider featuring staggered white illuminated box cubbies for decor display.'
+  },
+  {
+    id: 17,
     title: 'Modern White CNC Laser-Cut Om Mandir',
     category: 'Pooja Unit',
     image: '/services/pooja_cnc_om_mandir.jpg',
     description: 'Laser-cut CNC Om lotus backboard pooja mandir unit with jaali doors, spotlight illumination, and dark glossy bottom drawers.'
+  },
+  {
+    id: 18,
+    title: 'Champagne Gold & Charcoal Custom Wardrobe',
+    category: 'Wardrobe',
+    image: '/portfolio/wardrobe5.jpg',
+    description: 'Luxury champagne gold laminate wardrobe with charcoal grey accent band, brass handles, and overhead loft storage.'
+  },
+  {
+    id: 19,
+    title: 'White & Teak Wood Grain Grooved Wardrobe',
+    category: 'Wardrobe',
+    image: '/portfolio/wardrobe6.jpg',
+    description: 'Natural teak wood grain laminate frame with glossy white sliding doors, horizontal groove accents, and overhead storage loft.'
+  },
+  {
+    id: 20,
+    title: 'Dual-Tone Steel Blue & Ice White Wardrobe',
+    category: 'Wardrobe',
+    image: '/portfolio/wardrobe7.jpg',
+    description: 'Sleek steel blue & ice white panel sliding wardrobe with recessed dark aluminium profile handles.'
+  },
+  {
+    id: 21,
+    title: 'Sage Green & Ivory Loft Wardrobe with Mirror',
+    category: 'Wardrobe',
+    image: '/portfolio/wardrobe8.jpg',
+    description: 'Matte sage green and ivory white sliding wardrobe featuring a full-length vanity mirror and top storage cabinets.'
+  },
+  {
+    id: 22,
+    title: 'Blush Pink & White Chevron Sliding Wardrobe',
+    category: 'Wardrobe',
+    image: '/portfolio/wardrobe9.jpg',
+    description: 'Modern blush pink and crisp white geometric chevron pattern sliding wardrobe with matching overhead loft cabinets.'
+  },
+  {
+    id: 23,
+    title: 'Charcoal Grey Chevron Wardrobe with Window Bench',
+    category: 'Wardrobe',
+    image: '/portfolio/wardrobe10.jpg',
+    description: 'High-gloss charcoal grey & white chevron sliding wardrobe integrated with a cozy padded L-shaped window seating bench.'
+  },
+  {
+    id: 24,
+    title: 'Glossy Cream 3-Door Sliding Gold Strip Wardrobe',
+    category: 'Wardrobe',
+    image: '/portfolio/wardrobe11.jpg',
+    description: '3-door glossy cream sliding wardrobe featuring intersecting gold brass metal strip inlays and a slate blue top storage loft.'
+  },
+  {
+    id: 25,
+    title: 'Royal Blue & Off-White Horizontal Band Wardrobe',
+    category: 'Wardrobe',
+    image: '/portfolio/wardrobe12.jpg',
+    description: 'High-gloss royal blue sliding doors with an off-white middle accent band and grey top loft cabinets.'
+  },
+  {
+    id: 26,
+    title: 'Soft Powder Blue & Silver Striped Wardrobe',
+    category: 'Wardrobe',
+    image: '/portfolio/wardrobe13.jpg',
+    description: 'Full-wall soft powder blue sliding wardrobe with horizontal silver profile strips and top storage lofts.'
+  },
+  {
+    id: 27,
+    title: 'Glossy Grey & Teak Arch Accent Wardrobe',
+    category: 'Wardrobe',
+    image: '/portfolio/wardrobe14.jpg',
+    description: 'Contemporary glossy light grey sliding wardrobe with warm teak wood arch side accents and brass profile striping.'
+  },
+  {
+    id: 28,
+    title: 'Warm Ambient Cove & False Ceiling Lighting',
+    category: 'Ceiling',
+    image: '/services/lighting_cove_profile.jpg',
+    description: 'Minimalist warm perimeter cove LED false ceiling lighting with accent circular wall backlight and TV console illumination.'
   }
 ];
 
-const categories = ['All', 'Wardrobe', 'TV Unit', 'Crockery Unit', 'Ceiling', 'Curtain', 'Pooja Unit'];
+const categories = ['All', 'Wardrobe', 'TV Unit', 'Crockery Unit', 'Custom Furniture', 'Ceiling', 'Curtain', 'Pooja Unit'];
 
 const PortfolioGrid = ({ limit }) => {
   const [activeCategory, setActiveCategory] = useState('All');
